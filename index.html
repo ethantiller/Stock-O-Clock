@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--This allows the screensize to be compatible for all devices.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--This links all of our files that we need, such as fonts and CSS files.-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stock O' Clock</title>
+  </head>
+  <body>
+    
+    <div class = index-total>
+      <img class="left-image" src="images/Collumn (Left) (1).png">
+      <div class="description">
+        <img class="stoc-logo" src="images/New STOC Logo.png">
+        <h1 class="ml11">
+          <div class="text-wrapper">
+            <p class="letters">Stock O'Clock allows you to search for</p>
+            <p class="letters">and see your favorite stocks, allowing</p>
+            <p class="letters">     you to have a clean portfolio.</p>
+          </div>
+        </h1>
+      </div>
+      
+      <img class="right-image" src="images/Collumn (Right) (1).png">
+    </div>
+
+    <!-- <div class="description">
+      <h1 class="ml11">
+        <div class="text-wrapper">
+          <div class="line line1"></div>
+          <div class="letters">STOC allows you to search for and save your favorite stocks,</div>
+          <div class="letters">allowing you to have a clean portfolio.</div>
+        </div>
+      </h1>
+    </div> -->
+
+    <div class = stockies>
+      <img class="stocky-up" src="images/Stocky (Thumbs Up) (1).png">
+        <form>
+          <input type="submit" class="getstartedbutton" id="getstartedBtn" value="Get Started!">
+        </form>
+      <img class="stocky-down" src="images/Stocky (Thumbs Down).png">
+    </div>
+    
+    
+    <button hidden id="submitBtn"></button>
+    <button hidden id="deleteBtn"></button>
+    <button hidden id="logout"></button>
+
+    <!--Auth0 integration-->
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+    <script src="./mainpage.js"></script>
+
+    <!--This is the start of the animation text code-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      // Select the text wrapper
+      var textWrappers = document.querySelectorAll('.ml11 .letters');
+      // Wrap every letter in a span
+      textWrappers.forEach(textWrapper => {
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w|\s)/g, "<span class='letter' style='opacity: 0;'>$&</span>");
+      })
+      
+      // Initialize the anime.js animation
+      anime.timeline({loop: false}) // Set loop to false for a single iteration
+        .add({
+          targets: '.ml11 .letter',
+          opacity: [0, 1],
+          easing: "easeOutExpo",
+          duration: 1500, // Duration of the fade-in effect, can be adjusted
+          delay: (el, i) => 30 * (i + 1) // Delay between each letter's fade-in, can be adjusted
+        });
+    </script>
+
+  </body>
+</html>

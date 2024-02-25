@@ -1,0 +1,394 @@
+.description-text {
+  width: 700px;
+  text-align: center;
+  display: inline-block;
+}
+
+.description {
+  font-size: 28px;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  color: rgb(184, 183, 183);
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  
+}
+
+.description-container {
+  width: 100%
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(to left, rgb(17, 47, 17), rgb(28, 88, 49));
+}
+
+html {
+  min-height: 100vh;
+}
+
+.stoc-logo {
+  height: 300px;
+  width: auto;
+  text-align: center;
+}
+
+.stoc-container-main {
+  text-align: left;
+  display: flex;
+  width: 100px;
+}
+
+.stoc-logo-main {
+  height: 230px;
+  width: auto;
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+.search-div {
+  display: inline-block;
+  text-align: left;
+  margin-left: -20px; 
+  width: 300px;
+  height: 100px;
+}
+
+.getstarted {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.getstartedbutton {
+  border: white;
+  border-radius: 50px;
+  width: 250px;
+  height: 80px;
+  cursor: pointer;
+  background: rgb(221, 220, 220);
+  font-size: 23px;
+  font-family: "Kode mono", "monospace";
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.getstartedbutton:hover {
+  border: white;
+  border-radius: 50px;
+  width: 250px;
+  height: 80px;
+  cursor: pointer;
+  background: rgb(47, 107, 66);
+  color: white;
+  font-size: 23px;
+  font-family: "Kode mono", "monospace";
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.search-button {
+  width: 225px;
+  height: 40px;
+  text-align: left;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  font-size: 10px;
+}
+
+.logo-search-submit {
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.logout-container {
+  display: block;
+}
+
+.left-image {
+  height: 500px;
+  width: auto;
+}
+
+.right-image {
+  height: 500px;
+  width: auto;
+}
+
+.submitbuttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+}
+
+.header {
+  display: block;
+}
+
+.index-total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-total-container {
+  width: 100%;
+}
+
+.logout-button {
+  margin-top: 10px;
+  border-radius: 7px;
+  width: 115px;
+  border: none;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  margin-top: 10px;
+  border-radius: 7px;
+  width: 115px;
+  border: none;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  opacity: .5;
+  transition: .2s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.delete-button {
+  margin-top: 10px;
+  border-radius: 7px;
+  width: 110px;
+  border: none;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  margin-top: 10px;
+  border-radius: 7px;
+  width: 110px;
+  border: none;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  opacity: .5;
+  transition: .2s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile {
+  display: block;
+}
+
+.stocky-up{
+  height: 220px;
+  width: 290px;
+  margin-top: 10px;
+}
+
+.stocky-down{
+  height: 230px;
+  width: 307px;
+}
+
+.stockies {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stock-stats {
+  width: 1224px;
+  margin-left: 250px;
+  position: relative;
+  top: -300px;
+  background: rgb(241, 239, 239); 
+  opacity: .8;
+  
+}
+
+.getstartedmaindiv {
+  text-align: center;
+
+}
+
+
+
+
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  margin-top: -150px;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml11 .letters {
+  white-space: pre; /* Preserve whitespace characters */
+}
+
+.button1 {
+  
+  width: 0px;
+}
+
+.button2 {
+  width: 0px;
+}
+
+.button3 {
+  width: 0px;
+}
+
+.letters-text {
+  width: 700px;
+  text-align: center;
+  display: inline-block;
+}
+
+.letters {
+  font-size: 28px;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  color: rgb(184, 183, 183);
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  max-width: 50%;
+  overflow-wrap: normal;
+}
+
+.stocky-main {
+  height: 200px;
+  width: auto;
+  margin-left: 20px;
+}
+
+.stocky-main-div {
+  
+  margin-top: 0px;
+}
+
+.getstartedmain {
+  font-size: 18px;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  max-width: 50%;
+  overflow-wrap: normal;
+  border: none;
+  border-radius: 15px;
+  margin-top: 300px;
+  margin-bottom: 100px;
+}
+
+.stocky-green {
+  height: 200px;
+  width: auto;
+  position: relative;
+  bottom: -130px;
+}
+
+.stocky-red {
+  height: 200px;
+  width: auto;
+  position: relative;
+  bottom: -130px;
+  left: -25px;
+}
+
+.logout {
+  font-size: 18px;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  width: 100px;
+  overflow-wrap: normal;
+  border: none;
+  border-radius: 15px;
+  height: auto;
+  margin-top: 120px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  font-size: 18px;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  width: 100px;
+  overflow-wrap: normal;
+  border: none;
+  border-radius: 15px;
+  height: auto;
+  margin-top: 120px;
+  transition: .3s;
+  background: rgb(101, 100, 100);
+  
+}

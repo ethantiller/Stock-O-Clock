@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--This allows the screensize to be compatible for all devices.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width", initial-scale="1.0">
+
+    <!--This links all of our files that we need, such as fonts and CSS files.-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <title>Stock O' Clock</title>
+  </head>
+  <body>
+    <div class="getstartedmaindiv">
+      <img id="stocky-green" class="stocky-green" src="images/Stocky (Green).png">
+      <button class="getstartedmain" id="getstartedmain">Start searching now!</button>
+      <img id="stocky-red" class="stocky-red" src="images/Stocky (Red).png">
+    </div>
+    <div class="logo-search-submit">
+      
+      <div class="stoc-container-main" id="stoc-container-main">
+        <img id="stoc-logo-main" class="stoc-logo-main" src="images/New STOC Logo.png">
+      </div>
+
+      <div class="submitbuttons" id="submitbuttons">
+        <div class="search-div" id="search-div">
+          <form id="stock-symbols">
+            <input type="text" class="search-button" id="searchBtn" placeholder="Search for your favorite stocks today!">
+          </form>
+          <div class="logout-container">
+            <form>
+              <input type="submit" class="logout-button" id="submitBtn" value="Stock Search!">
+              <button class="delete-button" id="deleteBtn">Delete Stock</button>
+            </form>
+          </div>
+          <div class="stock-stats" id="companySymbol">
+          
+          </div>
+          
+        </div>
+        
+    </div>
+    <div class="stocky-main-div">
+      <img id="stocky-main" class="stocky-main" src="images/Stocky (Thumbs Up) (1).png">
+      <button class="logout" id="logout">Logout!</button>
+    </div>
+    
+    <button hidden id="getstartedBtn"></button>\<button hidden id="getstartedBtn"></button>
+
+    <button hidden id="getstartedBtn"></button>
+    <button hidden id="logo"></button>
+    <button hidden id="logout"></button>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+  <script src="./mainpage.js"></script>
+  
+
+  </body>
+</html>
