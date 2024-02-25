@@ -28,7 +28,6 @@ auth0.createAuth0Client({
     auth0Client.logout();
   });
 
-console.log("Right here")
   const isAuthenticated = await auth0Client.isAuthenticated();
   const userProfile = await auth0Client.getUser();
 
