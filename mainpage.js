@@ -44,7 +44,8 @@ window.onload = function() {
   document.querySelector("#submitBtn").addEventListener("click",(e)=>{
     e.preventDefault()
 
-    const companySymbol = document.querySelector("#searchBtn").value
+    const companySymbol = document.querySelector("#searchBtn").value.toUpperCase();
+    
 
     // Check if an element with the same id already exists
     let existingElement = document.getElementById(companySymbol);
