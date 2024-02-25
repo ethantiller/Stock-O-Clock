@@ -2,7 +2,7 @@ auth0.createAuth0Client({
   domain: "dev-6af1rhk16075mjiz.us.auth0.com",
   clientId: "ETEkszSpLvx32uEbCXy6ENPev09ekB3z",
   authorizationParams: {
-    redirect_uri: "https://ethantiller.github.io/Hackathon-Project/mainpage.html"
+    redirect_uri: "https://ethantiller.github.io/Stock-O-Clock/mainpage.html"
   }
 }).then(async (auth0Client) => {
   // Assumes a button with id "getstartedBtn" in the DOM
