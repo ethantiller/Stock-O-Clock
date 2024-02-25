@@ -28,6 +28,7 @@ auth0.createAuth0Client({
     auth0Client.logout();
   });
 
+console.log("Right here")
   const isAuthenticated = await auth0Client.isAuthenticated();
   const userProfile = await auth0Client.getUser();
 
@@ -43,7 +44,8 @@ window.onload = function() {
   document.querySelector("#submitBtn").addEventListener("click",(e)=>{
     e.preventDefault()
 
-    const companySymbol = document.querySelector("#searchBtn").value;
+    const companySymbol = document.querySelector("#searchBtn").value
+    
 
     // Check if an element with the same id already exists
     let existingElement = document.getElementById(companySymbol);
@@ -52,7 +54,7 @@ window.onload = function() {
       return; // Exit the function
     }
 
-    fetch("https://financialmodelingprep.com/api/v3/symbol/NASDAQ?apikey=9756oLbB5DYJVYCGFIN7vpw6W838UrSV")
+    fetch("https://financialmodelingprep.com/api/v3/symbol/NASDAQ?apikey=28d2f4dffc28a60921b7ada9e9d829e0")
     .then(response => {
       if(!response.ok){
           throw new Error("Could not fetch resource")
