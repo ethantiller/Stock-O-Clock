@@ -54,7 +54,7 @@ window.onload = function() {
       return; // Exit the function
     }
 
-    fetch("https://financialmodelingprep.com/api/v3/symbol/NASDAQ?apikey=28d2f4dffc28a60921b7ada9e9d829e0")
+    fetch("https://financialmodelingprep.com/api/v3/symbol/NASDAQ?apkey=28d2f4dffc28a60921b7ada9e9d829e0")
     .then(response => {
       if(!response.ok){
           throw new Error("Could not fetch resource")
